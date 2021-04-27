@@ -1,6 +1,6 @@
-package com.company;
+package Week2;
 
-public class humptydumpty {
+public class HumptyDumpty {
     public static void main(String[] args) {
         // Modify this program to print Humpty Dumpty riddle correctly
     System.out.println("All the king's horses and all the king's men");

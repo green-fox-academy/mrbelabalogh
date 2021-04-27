@@ -1,4 +1,4 @@
-package com.company;
+package Week2;
 
 public class TwoNumbers {
     public static void main(String[]args) {

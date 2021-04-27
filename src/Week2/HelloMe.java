@@ -1,4 +1,4 @@
-package com.company;
+package Week2;
 
 public class HelloMe {
 
