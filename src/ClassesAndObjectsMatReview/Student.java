@@ -1,14 +1,13 @@
-/*
 
 package ClassesAndObjectsMatReview;
 
 public class Student {
 
-  private String name;
-  private String className;
-  private int age;
+  public String name;
+  public String className;
+  public int age;
 
-  Student() {
+  Student(String nagy_dávid, String cosmo) {
     // Ez egy default constructor! Ez = 0!
   }
 
@@ -29,23 +28,26 @@ public class Student {
     // Ez 2 paraméteres
   }
 
-}
+  public Student() {
 
-void. introduceYourself() {
+  }
+
+
+  void introduceYourself() {
     System.out.println("Hello my name is " + name + "and I'm " + age + "years old");
-    }
+  }
 
-public int getAge() {
+  public int getAge() {
     return age;
-    }
+  }
 
-public void setAge(int age) {
-    if(age <= 0) {
-    throw new IllegalArgumentException();
+  public void setAge(int age) {
+    if (age <= 0) {
+      throw new IllegalArgumentException();
     }
     this.age = age;
 
-    }
+  }
+}
 
 
- */
