@@ -14,10 +14,14 @@ public class AircraftCarrier {
     airCraftList.add(F16);
     AirCraft F35 = new AirCraft("F35",12,50,0);
     airCraftList.add(F35);
+    AirCraft F40 = new AirCraft("F40",25,40,0);
+    airCraftList.add(F40);
+
 
 
     for (AirCraft aircraft : airCraftList) {
       aircraft.fight();
+
 
     }
 
@@ -36,6 +40,15 @@ public class AircraftCarrier {
     for (AirCraft aircraft: airCraftList) {
       aircraft.getStatus();
     }
+
+    List<AirCraftCarrierClass> airCraftCarrierList = new ArrayList<>();
+
+    AirCraftCarrierClass awesome = new AirCraftCarrierClass("AWESOME");
+    awesome.fill();
+
+
+
+
 
     /*
     for (i = 0; i < airCraftList.size(); i++) {

@@ -7,6 +7,7 @@ public class AirCraft {
   public int BaseDamage;
   public int AmmoStorage;
   public int AllDamage = BaseDamage * MaxAmmo;
+  public int InitialAmmoStorage;
 
   AirCraft(String type, int MaxAmmo, int BaseDamage, int AmmoStorage) {
     this.type = type;
@@ -16,7 +17,17 @@ public class AirCraft {
   }
 
   AirCraft() {
+
   }
+
+
+/*
+  AirCraft(int InitialAmmoStorage) {
+    this.InitialAmmoStorage = 2300;
+
+ */
+
+
 
   void fight() {
 
@@ -28,11 +39,14 @@ public class AirCraft {
 
 
   void refillAmmo() {
+
     this.AmmoStorage = AmmoStorage;
     this.MaxAmmo = MaxAmmo;
     int RefilledAmmo = 300;
     System.out.println("Ammo refilled by 300.");
     int RemainingAmmo = RefilledAmmo - MaxAmmo;
+
+
     System.out.println("Unused Ammo: " + RemainingAmmo);
 /*
     for (AmmoStorage=0; AmmoStorage < MaxAmmo;AmmoStorage++) {
