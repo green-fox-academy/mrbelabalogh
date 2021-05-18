@@ -14,7 +14,6 @@ public class InventoryApp {
 
 
 
-
   switch (arguments[0]) {
 
     case "-a":
