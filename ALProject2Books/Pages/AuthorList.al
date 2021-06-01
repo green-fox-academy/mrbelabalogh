@@ -48,6 +48,18 @@ page 50103 AuthorList
         }
     }
 
+
+    trigger OnOpenPage();
     var
-        myInt: Integer;
+        //MyQuery: Query ExampleQuery; // íGy kell egy queryt meghívni
+        MyQuery: Query AggregateQuery;
+    begin
+        if MyQuery.Open() then begin
+            while MyQuery.Read() do begin  //Idáig csak végigmentünk az elemein queryvel
+                Message(MyQuery.AuthorName); // Az AuthorName alapján szűrtünk rá
+            end;
+            MyQuery.Close()
+        end;
+    end;
+
 }
