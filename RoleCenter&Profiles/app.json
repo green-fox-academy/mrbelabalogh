@@ -1,0 +1,26 @@
+{
+  "id": "722cca60-0af9-465f-b8fd-1464fc978d17",
+  "name": "RoleCenter&Profiles",
+  "publisher": "Default publisher",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "17.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://RoleCenter&Profiles.com/Help/",
+  "showMyCode": true,
+  "runtime": "6.0"
+}
