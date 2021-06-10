@@ -7,6 +7,9 @@ table 50102 Movie
 
         field(1; Title; Text[250])
         {
+            DataClassification = ToBeClassified;
+
+
 
         }
 
@@ -21,37 +24,45 @@ table 50102 Movie
                 end
                 else
                     if Rec.Year > 2021 then begin
-                        Error('The Movie must be older than 2022.')
-
-
-
-
-
-
+                        Error('The Movie must be older than 2022.');
+                    end;
+            end;
         }
 
         field(3; LengthInMinutes; Integer)
         {
+            trigger OnValidate();
+            begin
+                if Rec.LengthInMinutes < 60 then begin
+                    Error('The movie has to be 60 minutes or longer');
+                end;
+            end;
 
         }
 
         field(4; DirectorID; Integer)
         {
+            DataClassification = ToBeClassified;
+            TableRelation = Director;
 
         }
 
         field(5; DirectorName; Text[240])
         {
             FieldClass = FlowField;
-
             CalcFormula = lookup(Director.Name where(Id = field(DirectorId)));
+        }
+
+        field(6; Id; Integer)
+        {
+
         }
 
     }
 
     Keys
     {
-        Key(PK; Title)
+        Key(PK; Id)
         {
 
         }

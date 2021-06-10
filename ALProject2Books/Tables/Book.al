@@ -34,7 +34,7 @@ table 50100 Book
             DataClassification = ToBeClassified;
         }
 
-        field(5; AuthorId; Integer) // AuthorId's type must math Author.Id's type
+        field(5; AuthorId; Integer) // AuthorId's type must match Author.Id's type
         {
             DataClassification = ToBeClassified;
             TableRelation = Author; // Sets up the table relation

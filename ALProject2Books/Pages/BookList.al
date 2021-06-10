@@ -49,6 +49,29 @@ page 50107 BookList
                     Caption = 'Author Id';
                 }
 
+                field(HardCover; Rec.HardCover)
+                {
+                    ApplicationArea = All;
+                    Caption = 'HardCover';
+                }
+
+                field(NumOfHardcoverBooks; Rec.NumOfHardcoverBooks)
+                {
+                    ApplicationArea = All;
+                    Caption = 'NumOfHardCoverBooks';
+                }
+
+                field(NumberOfBooks; Rec.NumberOfBooks)
+                {
+                    ApplicationArea = All;
+                    Caption = 'NumberOfBooks';
+                }
+
+                field(SumOfHoursToRead; Rec.SumOfHoursToRead)
+                {
+                    ApplicationArea = All;
+                    Caption = 'SumOfHoursToRead';
+                }
             }
         }
 
