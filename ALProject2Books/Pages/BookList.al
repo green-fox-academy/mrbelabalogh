@@ -123,4 +123,16 @@ page 50107 BookList
             }
         }
     }
+
+    trigger OnOpenPage();
+    var
+        MyCodeUnit: Codeunit MyTestCodeUnit;
+        ReturnValue: Decimal;
+    begin
+        MyCodeUnit.Run();
+        MyCodeUnit.WelcomeUser('Tyler');
+        ReturnValue := MyCodeUnit.Addition(5, 6);
+        Message(Format(ReturnValue));
+
+    end;
 }

@@ -1,0 +1,26 @@
+{
+  "id": "f6775890-8632-4ac2-9b65-f6c4bcf9d24a",
+  "name": "Oil",
+  "publisher": "Default publisher",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "18.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://Oil.com/help/",
+  "showMyCode": true,
+  "runtime": "7.0"
+}

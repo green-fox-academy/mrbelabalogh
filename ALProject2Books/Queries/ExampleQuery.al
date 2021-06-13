@@ -1,6 +1,9 @@
-query 50100 ExampleQuery
 
-QueryType = Normal;
+
+query 50100 ExampleQuery
+{
+
+    QueryType = Normal;
 
     elements
     {
@@ -16,25 +19,20 @@ QueryType = Normal;
 
 
             }
-            /*
-            filter(FilterName; SourceFieldName)
-            {
 
-            } */
+
 
             dataitem(MyBook; Book)
             {
                 DataItemLink = AuthorId = AuthorTable.Id;
                 SqlJoinType = InnerJoin;
 
-                {
-                    Column(PageCount; PageCount)
-                }
+
+
+                Column(PageCount; PageCount)
+                { }
             }
-
-
-
-
         }
     }
 }
+

@@ -22,6 +22,12 @@ table 50101 Author
             CalcFormula = count(Book Where(AuthorId = field(Id)));
 
         }
+
+        field(4; HardCover; Boolean)
+        {
+            FieldClass = FlowField;
+
+        }
     }
 
     keys

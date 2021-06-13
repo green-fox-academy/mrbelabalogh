@@ -1,6 +1,6 @@
 query 50101 AggregateQuery
-
-QueryType = Normal;
+{
+    QueryType = Normal;
 
     elements
     {
@@ -47,5 +47,8 @@ QueryType = Normal;
         //SetFilter(SumBookPageCount);
         TopNumberOfRows(1);
     end;
+
+
+
 }
-}
+

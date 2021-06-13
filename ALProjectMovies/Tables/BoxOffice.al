@@ -38,7 +38,7 @@ table 50103 BoxOffice
             // ??
         }
 
-        field(5; MovieTitle; Text[240])
+        field(5; MovieTitle; Text[250])
         {
             FieldClass = FlowField;
             CalcFormula = lookup(Movie.Title where(Id = field(MovieId)));

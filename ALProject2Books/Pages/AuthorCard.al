@@ -16,6 +16,10 @@ page 50102 AuthorCard
                 ApplicationArea = All;
             }
 
+            field(HardCover; rec.Hardcover)
+            {
+                ApplicationArea = All;
+            }
         }
     }
 }

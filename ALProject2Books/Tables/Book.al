@@ -1,4 +1,4 @@
-table 50100 Book
+table 50109 Book
 {
     DataClassification = ToBeClassified;
 
@@ -43,6 +43,7 @@ table 50100 Book
         field(6; AuthorName; Text[150])
         {
             FieldClass = FlowField; // Means that the field is calculated and not stored in the physical table
+
             // select Author.Name from Author where Author.Id = Book.AuthorId
 
             CalcFormula = lookup(Author.Name where(Id = field(AuthorId)));
