@@ -2,7 +2,7 @@ page 50103 OilFieldList
 {
     PageType = List;
     ApplicationArea = All;
-    UsageCategory = Administration;
+    UsageCategory = Lists;
     SourceTable = OilFields;
     CardPageId = OilFieldCard;
     Caption = 'List of OilFields';
@@ -28,16 +28,36 @@ page 50103 OilFieldList
                 field(WeeklyOilIncome; Rec.WeeklyOilIncome)
                 {
                     ApplicationArea = All;
+                    NotBlank = true;
                 }
 
                 field(MonthlyExpense; Rec.MonthlyExpense)
                 {
                     ApplicationArea = All;
+                    NotBlank = true;
                 }
                 field(Location; Rec.Location)
                 {
                     ApplicationArea = All;
                 }
+            }
+        }
+
+    }
+
+    actions
+    {
+        area(Processing)
+        {
+            action("Ledger Entries")
+            {
+                ApplicationArea = All;
+                Caption = 'To OilOrderList';
+                RunObject = page OilOrderList;
+                trigger OnAction();
+                begin
+
+                end;
             }
         }
     }

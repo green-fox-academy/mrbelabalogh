@@ -23,6 +23,7 @@ page 50105 PetrolStationList
                 field(Name; Rec.Name)
                 {
                     ApplicationArea = All;
+                    NotBlank = true;
                 }
                 field(AmountOfEuros; Rec.AmountOfEuros)
                 {

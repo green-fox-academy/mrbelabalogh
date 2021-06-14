@@ -6,6 +6,8 @@ page 50104 OilFieldCard
     SourceTable = OilFields;
     AutoSplitKey = true;
     DelayedInsert = true;
+    
+    
 
     layout
     {

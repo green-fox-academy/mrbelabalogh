@@ -2,7 +2,7 @@ page 50106 PetrolStationCard
 {
     PageType = Card;
     ApplicationArea = All;
-    UsageCategory = Administration;
+    UsageCategory = Lists;
     SourceTable = PetrolStation;
     AutoSplitKey = true;
     DelayedInsert = true;

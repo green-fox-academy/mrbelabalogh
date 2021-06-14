@@ -1,0 +1,26 @@
+{
+  "id": "3014ad86-03d0-4dc5-ad0c-573b02131ca0",
+  "name": "Relationships",
+  "publisher": "Default publisher",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "18.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://Relationships.com/help/",
+  "showMyCode": true,
+  "runtime": "7.0"
+}

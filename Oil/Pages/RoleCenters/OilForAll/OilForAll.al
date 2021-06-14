@@ -17,7 +17,76 @@ page 50109 OilForAll
             }
         }
     }
+
+    actions
+    {
+        area(Creation)
+        {
+            group(AddNew)
+            {
+                Caption = 'Add new Oil Field';
+
+                action(CreateNewOilField)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Create new Oil Field';
+
+                }
+                action(CreateNewPetrolStation)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Create new Petrol Station';
+
+                }
+            }
+        }
+        area(Sections)
+        {
+            group(OilStats)
+            {
+                Caption = 'Oil Stats';
+                action(OilFieldList)
+                {
+                    ApplicationArea = All;
+                    Caption = 'To OilFieldList';
+                    RunObject = Page OilFieldList;
+                    RunPageMode = View;
+                }
+                action(PetrolStationList)
+                {
+                    ApplicationArea = All;
+                    Caption = 'ToPetrolStationList';
+                    RunObject = Page PetrolStationList;
+                    RunPageMode = View;
+                }
+                action(OilOrderList)
+                {
+                    ApplicationArea = All;
+                    Caption = 'ToOilOrderList';
+                    RunObject = Page OilOrderList;
+                    RunPageMode = View;
+                }
+                action(OilOrderCard)
+                {
+                    ApplicationArea = All;
+                    Caption = 'ToOilFieldCard';
+                    RunObject = report MonthlyReports;
+                    RunPageMode = View;
+                }
+                action(PetrolStationCard)
+                {
+                    ApplicationArea = All;
+                    Caption = 'ToPetrolStationCard';
+                    RunObject = Card PetrolStationCard;
+                    RunPageMode = View;
+                }
+            }
+        }
+    }
+
+
 }
+
 profile OilForAllProfile
 {
     Description = 'A new profile for the role center exercise';
@@ -38,61 +107,5 @@ pagecustomization MyCustomization customizes "Customer List"
         }
     }
 
-    actions
-    {
-        area(Navigation)
-        {
-            action(OilFieldList)
-            {
-                ApplicationArea = All;
-                Caption = 'To OilFieldList';
-                RunObject = Page OilFieldList;
-                                RunPageMode = View;
-            }
-        }
 
-        area(Navigation)
-        {
-            action(PetrolStationList)
-            {
-                ApplicationArea = All;
-                Caption = 'ToPetrolStationList';
-                RunObject = Page PetrolStationList;
-                                RunPageMode = View;
-            }
-        }   
-
-        area(Navigation)
-        {
-            action(OilOrderList)
-            {
-                ApplicationArea = All;
-                Caption = 'ToOilOrderList';
-                RunObject = Page OilOrderList;
-                                RunPageMode = View;
-            }
-        } 
-
-        area(Navigation)
-        {
-            action(OilOrderList)
-            {
-                ApplicationArea = All;
-                Caption = 'ToOilFieldCard';
-                RunObject = Card OilFieldCard;
-                RunPageMode = View;
-            }
-        } 
-
-        area(Navigation)
-        {
-            action(OilOrderList)
-            {
-                ApplicationArea = All;
-                Caption = 'ToPetrolStationCard';
-                RunObject = Card PetrolStationCard;
-                RunPageMode = View;
-            }
-        } 
-    }
 }

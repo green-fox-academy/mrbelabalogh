@@ -32,6 +32,7 @@ Table 50102 OilOrder
         field(6; PetrolStationId; Integer)
         {
             FieldClass = FlowField;
+            TableRelation = PetrolStation;
 
         }
         field(7; PetrolStationName; Text[250])

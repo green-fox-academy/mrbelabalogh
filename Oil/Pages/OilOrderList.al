@@ -2,7 +2,7 @@ page 50107 OilOrderList
 {
     PageType = List;
     ApplicationArea = All;
-    UsageCategory = Administration;
+    UsageCategory = Lists;
     SourceTable = OilOrder;
     CardPageId = OilOrderCard;
     Caption = 'List of OilFields';
