@@ -6,6 +6,4 @@ codeunit 50110 InstallCodeUnit
     begin
 
     end;
-
-    procedure InsertProduct(Id: Integer; Name: Text[50])
 }

@@ -8,9 +8,6 @@ table 50102 Movie
         field(1; Title; Text[250])
         {
             DataClassification = ToBeClassified;
-
-
-
         }
 
         field(2; Year; Integer)
@@ -19,11 +16,11 @@ table 50102 Movie
             trigger OnValidate();
             begin
                 Message('OnValidate has run');
-                if Rec.Year < 1900 then begin
+                if Year < 1900 then begin
                     Error('The Movie must be newer than 1900.');
                 end
                 else
-                    if Rec.Year > 2021 then begin
+                    if Year > 2021 then begin
                         Error('The Movie must be older than 2022.');
                     end;
             end;
@@ -56,6 +53,12 @@ table 50102 Movie
         field(6; Id; Integer)
         {
 
+        }
+
+        field(7; LongestMovie; Integer)
+        {
+            FieldClass = FlowField;
+            CalcFormula = max(Movie.LengthInMinutes);
         }
 
     }

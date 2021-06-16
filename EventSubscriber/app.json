@@ -1,6 +1,6 @@
 {
-  "id": "f4e86008-b8e6-4442-bbcd-e00b61ee119f",
-  "name": "ALProject2Books",
+  "id": "262fb943-9c0a-439e-8335-bc69e9661ede",
+  "name": "EventSubscriber",
   "publisher": "Default publisher",
   "version": "1.0.0.0",
   "brief": "",
@@ -13,15 +13,14 @@
   "dependencies": [],
   "screenshots": [],
   "platform": "1.0.0.0",
-  "application": "17.0.0.0",
+  "application": "18.0.0.0",
   "idRanges": [
     {
       "from": 50100,
       "to": 50149
     }
   ],
-  "contextSensitiveHelpUrl": "https://ALProject2Books.com/help/",
+  "contextSensitiveHelpUrl": "https://EventSubscriber.com/help/",
   "showMyCode": true,
-  "runtime": "6.0",
-  "features": ["TranslationFile"]
+  "runtime": "7.0"
 }

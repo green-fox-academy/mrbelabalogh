@@ -1,15 +1,19 @@
 codeunit 50135 MyTestCodeUnit
 {
-    trigger OnRun()
+    trigger OnRun();
+    var
+        Text001: Label 'The OnRun trigger has run';
     begin
-        Message('The OnRun trigger has run');
+        Message(Text001);
     end;
 
 
     procedure WelcomeUser(Name: Text)
+    var
+        Text001: Label 'Hello';
 
     begin
-        Message('Hello %1', Name);
+        Message(Text001, Name);
 
     end;
 

@@ -53,6 +53,7 @@ page 50103 AuthorList
     var
         //MyQuery: Query ExampleQuery; // íGy kell egy queryt meghívni
         MyQuery: Query AggregateQuery;
+
     begin
         if MyQuery.Open() then begin
             while MyQuery.Read() do begin  //Idáig csak végigmentünk az elemein queryvel
