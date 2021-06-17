@@ -1,0 +1,26 @@
+{
+  "id": "28a0b616-ce70-498a-abec-b7feb1681f87",
+  "name": "PracticeExam",
+  "publisher": "Default publisher",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "18.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://PracticeExam.com/help/",
+  "showMyCode": true,
+  "runtime": "7.0"
+}
