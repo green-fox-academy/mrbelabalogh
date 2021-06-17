@@ -9,7 +9,7 @@ table 50103 BoxOffice
         }
 
 
-        field(2; DomesticSales; Integer)
+        field(2; DomesticSales; Decimal)
         {
             trigger OnValidate()
             begin
@@ -20,7 +20,7 @@ table 50103 BoxOffice
 
         }
 
-        field(3; InternationalSales; Integer)
+        field(3; InternationalSales; Decimal)
         {
             trigger OnValidate()
             begin

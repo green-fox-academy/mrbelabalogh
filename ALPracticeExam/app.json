@@ -1,0 +1,26 @@
+{
+  "id": "d56fa06a-953f-45c5-b822-6a2c40103ef6",
+  "name": "ALPracticeExam",
+  "publisher": "Default publisher",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "18.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://ALPracticeExam.com/help/",
+  "showMyCode": true,
+  "runtime": "7.0"
+}
